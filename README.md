@@ -62,7 +62,6 @@ mvn -DskipTests package
 - `bungeecommandblock.staff`：允许使用 `staff-whitelist-commands`
 - `bungeecommandblock.bypass`：绕过所有检测，允许所有命令
 - `bungeecommandblock.*`：绕过所有检测，允许所有命令
-- `*`：若权限系统支持，也会被视为绕过所有检测
 
 ## 插件命令（仅控制台）
 

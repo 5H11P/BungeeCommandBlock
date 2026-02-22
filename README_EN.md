@@ -58,7 +58,6 @@ Example:
 - `bungeecommandblock.staff`: allows commands in `staff-whitelist-commands`
 - `bungeecommandblock.bypass`: bypass all checks (allow all commands)
 - `bungeecommandblock.*`: bypass all checks (allow all commands)
-- `*`: treated as bypass if your permissions plugin supports it
 
 ## Plugin Commands (Console Only)
 

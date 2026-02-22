@@ -11,7 +11,6 @@ public final class CommandFilterListener implements net.md_5.bungee.api.plugin.L
     private static final String STAFF_PERMISSION = "bungeecommandblock.staff";
     private static final String BYPASS_PERMISSION = "bungeecommandblock.bypass";
     private static final String PLUGIN_WILDCARD_PERMISSION = "bungeecommandblock.*";
-    private static final String GLOBAL_WILDCARD_PERMISSION = "*";
 
     private final BungeeCommandBlockPlugin plugin;
 
@@ -76,8 +75,7 @@ public final class CommandFilterListener implements net.md_5.bungee.api.plugin.L
 
     private boolean hasBypassPermission(ProxiedPlayer player) {
         return player.hasPermission(BYPASS_PERMISSION)
-                || player.hasPermission(PLUGIN_WILDCARD_PERMISSION)
-                || player.hasPermission(GLOBAL_WILDCARD_PERMISSION);
+                || player.hasPermission(PLUGIN_WILDCARD_PERMISSION);
     }
 
     private void sendMessage(ProxiedPlayer player, String messageTemplate, String inputCommand) {
