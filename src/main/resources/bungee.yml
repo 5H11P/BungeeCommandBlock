@@ -1,0 +1,5 @@
+name: BungeeCommandBlock
+main: github._5h11p.bungeecommandblock.BungeeCommandBlockPlugin
+version: 1.0.0
+author: 5H11P
+description: Filter backend commands on BungeeCord using whitelist/blacklist config.

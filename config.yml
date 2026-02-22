@@ -1,0 +1,22 @@
+## 权限节点:
+## - bungeecommandblock.staff : 可使用 staff-whitelist-commands 中的命令
+## - bungeecommandblock.bypass / bungeecommandblock.* / * : 绕过全部命令检测（允许所有命令）
+## 消息占位符:
+## - %command% : 玩家实际输入的命令（包含参数）
+whitelist-commands:  #直接提交到后端服务器，不做拦截的命令
+  - "/party"
+  - "/friends"
+  - "/bedwars"
+  - "/skywars"
+  - "/duels"
+blacklist-commands:  #被禁止的命令，玩家输入后会提示blacklist-command-message
+  - "/op"
+  - "/deop"
+  - "/stop"
+  - "/restart"
+  - "/ban"
+  - "/plugins"
+staff-whitelist-commands:  #仅允许具有 bungeecommandblock.staff 权限的玩家使用，其他玩家会提示undefined-command-message
+  - "/staffcommand"
+undefined-command-message: "Unknown command: %command%. Type \"/help\" for help."  #玩家输入未定义的命令时的提示
+blacklist-command-message: "You cannot use this command: %command%."
